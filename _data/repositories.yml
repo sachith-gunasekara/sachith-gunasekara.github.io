@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - sachith-gunasekara
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - surgeglobal/nanoJAXGPT
+  - sachith-gunasekara/Evol-Instruct
+  - sachith-gunasekara/struct-vs-unstruct
+  - sachith-gunasekara/ngram-doc-classifier
+  - sachith-gunasekara/t4d
