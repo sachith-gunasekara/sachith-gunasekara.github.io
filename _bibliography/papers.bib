@@ -1,9 +1,13 @@
 @article{dissanayake2024openbezoar,
   title={OpenBezoar: Small, Cost-Effective and Open Models Trained on Mixes of Instruction Data},
   author={Dissanayake, Chandeepa and Lowe, Lahiru and Gunasekara, Sachith and Ratnayake, Yasiru},
-  journal={arXiv preprint arXiv:2404.12195},
+  abstract={Instruction fine-tuning pretrained LLMs for diverse downstream tasks has demonstrated remarkable success and has captured the interest of both academics and practitioners. To ensure such fine-tuned LLMs align with human preferences, techniques such as RLHF and DPO have emerged. At the same time, there is increasing interest in smaller parameter counts for models. In this work, using OpenLLaMA 3Bv2 as a base model, we describe the recipe used to fine-tune the OpenBezoar family of models. In this recipe: We first generate synthetic instruction fine-tuning data using an open and commercially non-restrictive instruction fine-tuned variant of the Falcon-40B model under three schemes based on: LaMini-LM, WizardLM/Evol-Instruct (with databricks-dolly-15k as a seed dataset) and Orca (with the Flan Collection as a seed dataset), then filter these generations using GPT-4 as a human proxy. We then perform cost-effective QLoRA-based supervised fine-tuning sequentially with each scheme. The resulting checkpoint is further fine-tuned with a subset of the HH-RLHF dataset to minimize distribution shift prior to using the DPO loss to obtain the final checkpoint. Evaluation is done with the LM Eval Harness tasks/metrics as well as on MT-Bench using the "LLM-as-a-judge" framework with Claude 2.1, with the finding that the final checkpoint, "OpenBezoar-HH-RLHF-DPO", demonstrates superior performance over many models at the 3B parameter scale, even outperforming the top model in one of the categories on the Huggingface Open LLM Leaderboard. We release "OpenBezoar-SFT", "OpenBezoar-HH-RLHF-SFT", "OpenBezoar-HH-RLHF-DPO" checkpoints, alongside our generated datasets on HuggingFace at https://huggingface.co/collections/SurgeGlobal/open-bezoar-6620a24923e12127e9e2b9cc and our codebase at https://bitbucket.org/paladinanalytics/workspace/projects/OP.},
+  journal={arXiv preprint},
+  pdf={https://arxiv.org/pdf/2404.12195},
   year={2024},
+  month={April},
   url={https://arxiv.org/abs/2404.12195},
+  html={https://arxiv.org/abs/2404.12195},
   selected={true},
   abbr={Project Report},
   publisher={arXiv}
@@ -11,11 +15,13 @@
 
 @article{gunasekara2023capturing,
   title={Capturing sentence-level positional data into N-gram profiles for document classification},
-  author={Gunasekara, LMS and Premadasa, HKS},
+  author={Gunasekara, L M S and Premadasa, H K S},
+  abstract={Document classification is a crucial aspect in natural language processing with a wide range of applications in various domains such as email spam filtering, hate speech detection, political bias assessment, etc. While modern transformer-based classification approaches have shown promising results in this area, they rely on expensive parallel processing hardware, leaving them out of reach for simpler applications. Therefore, it is still safe to assume that there is room for improvement in terms of developing approaches with lower computational complexity. N-grams are a simple and efficient way of representing text data as features based on the distribution of contiguous tokens within the text. This approach is widely used in text analysis and research due to its language independence and minimal pre-processing requirements. However, most of these models do not possess sentence-level positional information in their n-gram profiles. Hence, in this study, we propose a revised algorithm for generating n-gram profiles related to document categories in a classification task. We combine this new algorithm with the Euclidean distance metric to assign class labels for raw documents. This algorithm was evaluated on two main tasks: language classification and subject classification (in English). Our results show that this approach achieves accuracy levels comparable to state-of-the-art models. For the language classification task, we were able to showcase an accuracy of 91% on the WiLI Benchmark Dataset consisting of 235 languages in total with an average prediction time of 1.88 × 10−2 seconds. Furthermore, we investigated several configurations in the dimensions of n-gram range and n-gram cutoff length for the subject classification task. The best performing configuration of a fixed n-gram length of 5 and a cutoff length of 5000 assumes an accuracy of 50% with an average inference time of 3.29 × 10−2 seconds on the 20 Newsgroups Dataset spanning a whole of 20 newsgroups categories. Overall, our findings suggest that this approach of including sentence-level positional data in n-gram profiles can facilitate an algorithm of minimal complexity, and this algorithm, combined with a suitable n-gram range and cutoff level, can perform well for document classification, particularly when dealing with noisy data with similar categorical labels.},
   year={2023},
   url={http://repository.kln.ac.lk/handle/123456789/26954},
-  abbr={Abstract},
-  publisher={ICAPS, Faculty of Science, University of Kelaniya, Sri Lanka},
+  html={http://repository.kln.ac.lk/handle/123456789/26954},
+  abbr={Extended Abstract},
+  journal={ICAPS, Faculty of Science, University of Kelaniya, Sri Lanka},
   selected={true},
   award={Sachith Gunasekara was recognized as the **Best Presenter** of the Software Intensive Systems track of the ICAPS 2023 Conference},
   award_name={Best Presenter}
@@ -25,5 +31,7 @@
   title={Introduction to Artificial Intelligence},
   author={Gunasekara, Sachith},
   year={2023},
-  abbr={Resource}
+  abbr={Resource},
+  url={https://www.researchgate.net/publication/369065528_Introduction_to_Artificial_Intelligence},
+  html={https://www.researchgate.net/publication/369065528_Introduction_to_Artificial_Intelligence},
 }
