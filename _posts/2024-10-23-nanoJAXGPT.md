@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nanoJAXGPT — A pedagogical introduction to JAX/Equinox
-date: 2024-05-01 00:32:13
+date: 2024-10-23 09:00:00
 description: Since its introduction, <a href="https://jax.readthedocs.io/en/latest/index.html" target="_blank"><i>JAX</i></a> has seen a significant rise in popularity within the Machine Learning (ML) community. A simple web search would reveal the vast community support, a variety of derivative projects, and a multitude of <i>Python</i> libraries built around <i>JAX</i>. This leads to the inevitable question — What is <i>JAX</i>, and why should I care?
 tags: transformers llms python nanoGPT
 categories: sample-posts

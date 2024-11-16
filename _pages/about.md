@@ -7,7 +7,7 @@ subtitle: Associate Machine Learning Engineer @ <a href="https://surge.global" t
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info:
 
 news: true # includes a list of news items
@@ -15,9 +15,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am Sachith Gunasekara, a recent graduate with a BSc (Hons) in Computer Science from the University of Kelaniya, where I graduated top of my class with a Cumulative GPA of 3.78/4. My academic pursuits have been centered around large language models (LLMs), with a keen interest in improving their efficiency in fine-tuning and inference, as well as enhancing their reasoning capabilities.
+I'm a Machine Learning Engineer at [Surge Global](https://surge.global) and a recent Computer Science graduate (First Class, ranked 1st) from the [University of Kelaniya](https://kln.ac.lk/). My journey in AI has been marked by a blend of academic excellence and hands-on industry experience, currently focusing on pushing the boundaries of what's possible with Large Language Models.
 
-Throughout my journey, I have actively contributed to research initiatives, including projects like "Basis Selection: Low-Rank Decomposition of Pretrained Large Language Models for Target Applications." My findings have been featured in conferences and pre-print platforms, reflecting my commitment to advancing AI research.
+My research interests have culminated in the development of OpenBezoar, a family of efficient and performant small language models, and novel approaches to document classification. I'm particularly fascinated by the intersection of computational efficiency and cognitive science in AI, exploring how we can make language models both more resource-efficient and better at reasoning.
 
-Currently, I am seeking a PhD opportunity to delve deeper into these areas, aspiring to develop innovative solutions that push the boundaries of LLM efficiency and reasoning. I look forward to collaborating with pioneering researchers to contribute to the evolving landscape of AI.
+When I'm not diving deep into AI research, I'm actively involved in the tech community, frequently share my insights through workshops and technical blogs. I'm currently seeking PhD opportunities in Computer Science, specifically focusing on enhancing LLM efficiency and reasoning capabilities. My goal is to contribute to the development of more resource-conscious and cognitively-aligned AI systems that can bridge the gap between System 1 and System 2 thinking.
+
 
