@@ -19,6 +19,6 @@ I'm a Machine Learning Engineer at [Surge Global](https://surge.global) and a re
 
 My research interests have culminated in the development of OpenBezoar, a family of efficient and performant small language models, and novel approaches to document classification. I'm particularly fascinated by the intersection of computational efficiency and cognitive science in AI, exploring how we can make language models both more resource-efficient and better at reasoning.
 
-When I'm not diving deep into AI research, I'm actively involved in the tech community, frequently share my insights through workshops and technical blogs. I'm currently seeking PhD opportunities in Computer Science, specifically focusing on enhancing LLM efficiency and reasoning capabilities. My goal is to contribute to the development of more resource-conscious and cognitively-aligned AI systems that can bridge the gap between System 1 and System 2 thinking.
+When I'm not diving deep into AI research, I'm actively involved in the tech community, frequently sharing my insights through workshops and technical blogs. I'm currently seeking PhD opportunities in Computer Science, specifically focusing on enhancing LLM efficiency and reasoning capabilities. My goal is to contribute to the development of more resource-conscious and cognitively-aligned AI systems that can bridge the gap between System 1 and System 2 thinking.
 
 
