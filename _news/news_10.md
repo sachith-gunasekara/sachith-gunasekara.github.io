@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-07-19
+date: 2022-07-19
 inline: true
 related_posts: false
 ---
 
-Selected for the Computer Science Honours program based on academic merit
+Was selected for the specialized Computer Science Honours program at the University of Kelaniya based on exceptional academic performance
