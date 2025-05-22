@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Sachith Gunasekara",
-    "label": "Associate Machine Learning Engineer",
+    "label": "Machine Learning Engineer",
     "email": "sachithgunasekara@outlook.com",
     "url": "https://sachith-gunasekara.github.io",
     "summary": "Machine learning engineer and researcher interested in Large Language Models, with particular focus on model efficiency and reasoning capabilities. Currently seeking PhD opportunities in computer science to explore LLM fine-tuning optimization and cognitive-aligned AI systems.",
@@ -66,9 +66,16 @@
   "work": [
     {
       "name": "Surge Global",
+      "position": "Machine Learning Engineer",
+      "startDate": "2025-04-01",
+      "endDate": "present",
+      "location": "Colombo 3, Sri Lanka"
+    },
+    {
+      "name": "Surge Global",
       "position": "Associate Machine Learning Engineer",
       "startDate": "2023-10-01",
-      "endDate": "present",
+      "endDate": "2025-04-01",
       "location": "Colombo 3, Sri Lanka"
     },
     {

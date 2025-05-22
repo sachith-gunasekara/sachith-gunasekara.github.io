@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Associate Machine Learning Engineer @ <a href="https://surge.global" target="_blank">Surge Global</a>
+subtitle: Machine Learning Engineer @ <a href="https://surge.global" target="_blank">Surge Global</a>
 
 profile:
   align: right
