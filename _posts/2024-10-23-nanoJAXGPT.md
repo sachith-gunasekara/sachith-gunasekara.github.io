@@ -22,6 +22,7 @@ Wait a minute, let’s pump the brakes here! If you were really after the introd
 Yes, if you haven’t heard of this already, _Equinox_ is a library built around _JAX_ with the aim of making the construction of Neural Networks (NN) as smooth as possible. What sets it apart is its familiar _PyTorch_-like syntax, making it a comfortable transition for those coming from a _PyTorch_ background. But don’t be fooled by its simplicity. Underneath the hood, Equinox is diligently registering your model as a [_JAX PyTree_](https://jax.readthedocs.io/en/latest/pytrees.html), a powerful data structure in _JAX_ that allows for complex transformations and computations.
 
 To put it all in context, we’ll illustrate this process through a practical example. Here’s a snippet of code that demonstrates how you can define a Linear layer using _Equinox_:
+
 ```python
 # Code extracted from https://docs.kidger.site/equinox/all-of-equinox/
 
@@ -47,93 +48,90 @@ Now, _Equinox_ offers a variety of prebuilt neural network layers, including the
 
 The following sections of this blog assume that you, the reader possesses a foundational understanding of _JAX_. Below, we compile a comprehensive, yet not exhaustive, list of resources to help you get started.
 
-* JAX introduction tutorial notebooks
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://jax.readthedocs.io/en/latest/tutorials/">
-      Tutorials — JAX documentation
-  </a>
-* Thinking in JAX
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://jax.readthedocs.io/en/latest/notebooks/thinking_in_jax.html">
-      How to think in JAX — JAX documentation
-  </a>
-* JAX Automatic vectorization
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://jax.readthedocs.io/en/latest/automatic-vectorization.html">
-      Automatic vectorization — JAX documentation
-  </a>
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://dinocausevic.com/2023/06/13/jax-vmap/">
-      JAX VMAP Simplified: An Easy Introduction for Beginners
-  </a>
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://jax.readthedocs.io/en/latest/_autosummary/jax.vmap.html">
-      jax.vmap — JAX documentation
-  </a>
-* Custom parameter initialization in Equinox
-  * <a 
-    style="
-      display: inline-block;
-      padding: 6px 12px;
-      color: #3a8bdb; 
-      border: 1px solid #384148; 
-      border-radius: 5px;
-      text-decoration: none;
-    "
-    href="https://docs.kidger.site/equinox/tricks/#custom-parameter-initialisation">
-      Tricks (ensembles, surgery, custom initializations, ...) - Equinox
-  </a>
-
+- JAX introduction tutorial notebooks
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://docs.jax.dev/en/latest/jax-101.html">
+    Tutorials — JAX documentation
+    </a>
+- Thinking in JAX
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://jax.readthedocs.io/en/latest/notebooks/thinking_in_jax.html">
+    How to think in JAX — JAX documentation
+    </a>
+- JAX Automatic vectorization
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://jax.readthedocs.io/en/latest/automatic-vectorization.html">
+    Automatic vectorization — JAX documentation
+    </a>
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://dinocausevic.com/2023/06/13/jax-vmap/">
+    JAX VMAP Simplified: An Easy Introduction for Beginners
+    </a>
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://jax.readthedocs.io/en/latest/_autosummary/jax.vmap.html">
+    jax.vmap — JAX documentation
+    </a>
+- Custom parameter initialization in Equinox
+  - <a 
+      style="
+        display: inline-block;
+        padding: 6px 12px;
+        color: #3a8bdb; 
+        border: 1px solid #384148; 
+        border-radius: 5px;
+        text-decoration: none;
+      "
+      href="https://docs.kidger.site/equinox/tricks/#custom-parameter-initialisation">
+    Tricks (ensembles, surgery, custom initializations, ...) - Equinox
+    </a>
 
 ## Notes for Clarity
 
-* In PyTorch, the conventional practice is to define a `forward` method in modules, which is designed to perform actions during the forward pass of the training phase. This approach could be employed in equinox modules as well. However, it is also typical to define the computations for the forward pass within the `__call__` definition of the class. This provides an easy way to define a forward pass for a model, but it’s important to note that any method can be used, and no methods are special-cased. Therefore, in the context of the upcoming sections, when we refer to the forward pass, it is suggested that the reader’s attention be directed towards the `__call__` definition of the respective module, or any other method that the developer chooses to use for this purpose.
-
+- In PyTorch, the conventional practice is to define a `forward` method in modules, which is designed to perform actions during the forward pass of the training phase. This approach could be employed in equinox modules as well. However, it is also typical to define the computations for the forward pass within the `__call__` definition of the class. This provides an easy way to define a forward pass for a model, but it’s important to note that any method can be used, and no methods are special-cased. Therefore, in the context of the upcoming sections, when we refer to the forward pass, it is suggested that the reader’s attention be directed towards the `__call__` definition of the respective module, or any other method that the developer chooses to use for this purpose.
 
 ## nanoGPT
 
 [nanoGPT](https://github.com/karpathy/nanoGPT) is a simple and fast repository for training or finetuning medium sized GPTs ([Generative Pretrained Transformer](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)). This is the deep learning repository that we will be rewriting with JAX/Equinox. The contents of this repository is shown in Figure 1 of which we emphasize on `model.py` and `train.py`.
-
 
 <p align="center">
     <img src="https://cdn-uploads.huggingface.co/production/uploads/647eff9aaa8c04bbf9365219/vEA6dJ6XKpyMWleo5N4KW.png" alt="Description of the image" style="height: 500px;" />
@@ -176,9 +174,9 @@ $$SwiGLU(x, W, V, b, c, \beta) = Swish_{\beta}(xW + b) \otimes (xV + c)$$
 
 Here \\(W, V, b, c\\) are all trainable parameters in the neural network, and we can implement this as shown in the codeblock below. Let us try to breakdown this code step-by-step:
 
-* We first create a subclass of the `eqx.Module` class as this activation function has trainable parameters, and hence we need to register this in our _PyTree_ definition.
-* We define the `__init__` method with the three parameters `dim_in`, `dim_out`, and `key`. The first two must be defined during the time of initializing of this module and we will infer the appropriate values based on the input and output number of parameters respectively.
-* The `__call__` method implements the definition of the SwiGLU activation function. We apply the [_Swish_](https://paperswithcode.com/method/swish) activation function on one transformation of the input and carry out a component-wise multiplication with another transformation of the input.
+- We first create a subclass of the `eqx.Module` class as this activation function has trainable parameters, and hence we need to register this in our _PyTree_ definition.
+- We define the `__init__` method with the three parameters `dim_in`, `dim_out`, and `key`. The first two must be defined during the time of initializing of this module and we will infer the appropriate values based on the input and output number of parameters respectively.
+- The `__call__` method implements the definition of the SwiGLU activation function. We apply the [_Swish_](https://paperswithcode.com/method/swish) activation function on one transformation of the input and carry out a component-wise multiplication with another transformation of the input.
 
 ```python
 import equinox as eqx
@@ -273,56 +271,60 @@ class MLP(nn.Module):
 Given our gathered experience in constructing a module from scratch with `equinox`, the process of converting the aforementioned _MLP_ layer should be relatively straightforward. We outline the steps for this conversion as follows:
 
 1. Firstly, change this class into an `equinox` module from `torch.nn`.
-    ```python
-    class MLP(eqx.Module):
-    ```
+   ```python
+   class MLP(eqx.Module):
+   ```
 2. Next, let’s rewrite the `__init__` method to initialize the _MLP_ layer in _JAX_. We’ve replaced the _PyTorch_ `nn.Linear` and `nn.Dropout` layers with their _Equinox_ equivalents, keeping the arguments consistent to preserve the original behavior. We initialize the `SwiGLU` module in our _Equinox_ version, carefully selecting the `dim_in` and `dim_out` arguments to match the output dimension of the preceding _Linear_ layer and the input dimension of the subsequent _Linear_ layer, both being `4 * config.n_embd`.
-    ```python
-    class MLP(eqx.Module):
-        c_fc    : eqx.nn.Linear
-        swiglu  : SwiGLU
-        c_proj  : eqx.nn.Linear
-        dropout : eqx.nn.Dropout
-    
-        def __init__(self, config, key):
-            lkey1, lkey2, skey = jax.random.split(key, 3)
-    
-            self.c_fc     = eqx.nn.Linear(config.n_embd, 4 * config.n_embd, use_bias=config.bias, key=lkey1)
-            self.swiglu   = SwiGLU(4 * config.n_embd, 4 * config.n_embd, skey)
-            self.c_proj   = eqx.nn.Linear(4 * config.n_embd, config.n_embd, use_bias=config.bias, key=lkey2)
-            self.dropout  = eqx.nn.Dropout(config.dropout)
-    ```
+
+   ```python
+   class MLP(eqx.Module):
+       c_fc    : eqx.nn.Linear
+       swiglu  : SwiGLU
+       c_proj  : eqx.nn.Linear
+       dropout : eqx.nn.Dropout
+
+       def __init__(self, config, key):
+           lkey1, lkey2, skey = jax.random.split(key, 3)
+
+           self.c_fc     = eqx.nn.Linear(config.n_embd, 4 * config.n_embd, use_bias=config.bias, key=lkey1)
+           self.swiglu   = SwiGLU(4 * config.n_embd, 4 * config.n_embd, skey)
+           self.c_proj   = eqx.nn.Linear(4 * config.n_embd, config.n_embd, use_bias=config.bias, key=lkey2)
+           self.dropout  = eqx.nn.Dropout(config.dropout)
+   ```
+
 3. Lastly, we’ve replaced the activation function `self.gelu(x)` with `self.swiglu(x)` in the forward pass. As you may have observed, we have employed a transformation function, `jax.vmap`, during certain steps of the forward pass. This will be further elaborated when we dissect the entire architecture in a layer-by-layer manner, explaining the dimensions of the input that each module receives and the necessity of a `vmap` in such a context.
 
-    However, for the time being, let's continue rewriting the remaining modules in our model.
-    ```python
-    class MLP(eqx.Module):
-        c_fc: eqx.nn.Linear
-        swiglu: SwiGLU
-        c_proj: eqx.nn.Linear
-        dropout: eqx.nn.Dropout
-    
-        def __init__(self, config, key):
-            lkey1, lkey2, skey = jax.random.split(key, 3)
-    
-            self.c_fc = eqx.nn.Linear(config.n_embd, 4 * config.n_embd, use_bias=config.bias, key=lkey1)
-            self.swiglu = SwiGLU(4 * config.n_embd, 4 * config.n_embd, skey)
-            self.c_proj = eqx.nn.Linear(4 * config.n_embd, config.n_embd, use_bias=config.bias, key=lkey2)
-            self.dropout = eqx.nn.Dropout(config.dropout)
-    
-        def __call__(self, x):
-            x = jax.vmap(self.c_fc)(x)
-            x = jax.vmap(self.swiglu)(x)
-            x = jax.vmap(self.c_proj)(x)
-            x = self.dropout(x)
-            return x
-    ```
+   However, for the time being, let's continue rewriting the remaining modules in our model.
+
+   ```python
+   class MLP(eqx.Module):
+       c_fc: eqx.nn.Linear
+       swiglu: SwiGLU
+       c_proj: eqx.nn.Linear
+       dropout: eqx.nn.Dropout
+
+       def __init__(self, config, key):
+           lkey1, lkey2, skey = jax.random.split(key, 3)
+
+           self.c_fc = eqx.nn.Linear(config.n_embd, 4 * config.n_embd, use_bias=config.bias, key=lkey1)
+           self.swiglu = SwiGLU(4 * config.n_embd, 4 * config.n_embd, skey)
+           self.c_proj = eqx.nn.Linear(4 * config.n_embd, config.n_embd, use_bias=config.bias, key=lkey2)
+           self.dropout = eqx.nn.Dropout(config.dropout)
+
+       def __call__(self, x):
+           x = jax.vmap(self.c_fc)(x)
+           x = jax.vmap(self.swiglu)(x)
+           x = jax.vmap(self.c_proj)(x)
+           x = self.dropout(x)
+           return x
+   ```
 
 ### CausalSelfAttention Module
 
 Moving forward, the process of converting modules should seem fairly straightforward since it mirrors the steps taken in the previous _MLP_ module. We’ll however focus on pointing out the distinct alterations applied in the upcoming module definitions.
 
 #### _PyTorch_ version:
+
 ```python
 # Code extracted from https://github.com/karpathy/nanoGPT/blob/master/model.py
 
@@ -377,6 +379,7 @@ class CausalSelfAttention(nn.Module):
 ```
 
 #### _Equinox_ version:
+
 ```python
 class CausalSelfAttention(eqx.Module):
     c_attn: eqx.nn.Linear
@@ -433,9 +436,9 @@ class CausalSelfAttention(eqx.Module):
         return y
 ```
 
-* We have rewritten the architecture of this attention module in the `__init__` method to look almost identical, with the exception of the last few lines.
-* In this module, along with several subsequent ones, we register the `config` argument as a class field. This is a particular scenario where we are registering a field that does not constitute a layer in the _NN_ architecture. In such a context, it becomes imperative to set it as an _Equinox_ static field using `eqx.field(static=True)`.
-* In the forward pass, you’ll notice we’ve changed `B, T, C = x.size()` to `B, T, C = jnp.size(x)`. This is an important difference that highlights the functional programming style of _JAX_. In PyTorch, tensors like `x` are objects with callable methods, so you would call the size method directly on `x`. But in _JAX_, arrays are passed as arguments to functions in `jax.numpy`. As we go through the code, keep an eye out for this functional pattern of passing arrays to _JAX_ functions.
+- We have rewritten the architecture of this attention module in the `__init__` method to look almost identical, with the exception of the last few lines.
+- In this module, along with several subsequent ones, we register the `config` argument as a class field. This is a particular scenario where we are registering a field that does not constitute a layer in the _NN_ architecture. In such a context, it becomes imperative to set it as an _Equinox_ static field using `eqx.field(static=True)`.
+- In the forward pass, you’ll notice we’ve changed `B, T, C = x.size()` to `B, T, C = jnp.size(x)`. This is an important difference that highlights the functional programming style of _JAX_. In PyTorch, tensors like `x` are objects with callable methods, so you would call the size method directly on `x`. But in _JAX_, arrays are passed as arguments to functions in `jax.numpy`. As we go through the code, keep an eye out for this functional pattern of passing arrays to _JAX_ functions.
 
 <!-- WARNING Block -->
 <div 
@@ -462,12 +465,10 @@ class CausalSelfAttention(eqx.Module):
     </p>
 </div>
 
-
-* So here's the deal with `numpy` arrays (and by extension, `jax.numpy` arrays): they don't come with a `view` method attached to them. To get our arrays into the shape we need for the transformations coming up next, we decided to use the handy `jnp.reshape` function.
-* In our implementation, we skip the flash attention part and jump right into manually implementing the attention mechanism. You might notice some similarities between our approach and the original, aside from the fact that we're using _JAX's_ functional API.
-  * One key difference is that we use the `jnp.matmul` function to perform matrix multiplication, replacing the `@` operator.
-  * Another thing to watch out for is that `jnp.transpose` works a bit differently than `torch.transpose`. In _JAX_, `jnp.swapaxes` is the function you'll want to use to achieve the same result as _PyTorch_.
-
+- So here's the deal with `numpy` arrays (and by extension, `jax.numpy` arrays): they don't come with a `view` method attached to them. To get our arrays into the shape we need for the transformations coming up next, we decided to use the handy `jnp.reshape` function.
+- In our implementation, we skip the flash attention part and jump right into manually implementing the attention mechanism. You might notice some similarities between our approach and the original, aside from the fact that we're using _JAX's_ functional API.
+  - One key difference is that we use the `jnp.matmul` function to perform matrix multiplication, replacing the `@` operator.
+  - Another thing to watch out for is that `jnp.transpose` works a bit differently than `torch.transpose`. In _JAX_, `jnp.swapaxes` is the function you'll want to use to achieve the same result as _PyTorch_.
 
 ### Block Module
 
@@ -674,7 +675,7 @@ class TransformerLayer(eqx.Module):
         return x
 ```
 
-We would like to draw the reader’s attention to the fact that in the first line of the forward pass, we are only capable of unpacking the token dimension length from the input. This is in contrast to the _PyTorch_ implementation where the batch dimension is also obtained. The difference here arises from the fact that we won't be processing a batch of inputs, but instead, a single input containing a sequence of tokens. __DO NOT WORRY!!!__ This will become clear as we construct the training loop, where a vectorized map is applied on the batch dimension.
+We would like to draw the reader’s attention to the fact that in the first line of the forward pass, we are only capable of unpacking the token dimension length from the input. This is in contrast to the _PyTorch_ implementation where the batch dimension is also obtained. The difference here arises from the fact that we won't be processing a batch of inputs, but instead, a single input containing a sequence of tokens. **DO NOT WORRY!!!** This will become clear as we construct the training loop, where a vectorized map is applied on the batch dimension.
 
 With the transformer layer in a separate module, the `GPT` module is as simple as it can get. We show you the most minimal version of the `GPT` module below.
 
@@ -712,9 +713,9 @@ class GPT(eqx.Module):
         if non_embedding:
             n_params -= sum(self.transformer.wpe.weight.shape)
         return n_params
-    
+
     ## CODE STRIPPED FOR DEMONSTRATION
-    
+
     def __call__(self, idx, train_mode=False):
         x = self.transformer(idx)
 
@@ -771,7 +772,7 @@ def named_parameters(model: eqx.Module):
                 pn += str(path[index])
 
         out.append((pn[1:], p))
-    
+
     return out
 
 
@@ -779,19 +780,19 @@ def find_sub_tree(model: eqx.Module, sub_tree_name: str, filter_fn: Callable = N
     out = []
     for path, p in jax.tree_util.tree_flatten_with_path(model, is_leaf=filter_fn)[0]:
         pn = ''
-    
+
         for index in range(len(path)):
             if isinstance(path[index], jax._src.tree_util.DictKey):
                 pn += '.' + path[index].key
             else:
                 pn += str(path[index])
-    
+
         if filter_fn:
             if filter_fn(p) and pn.endswith(sub_tree_name):
                 out.append(p)
         elif pn.endswith(sub_tree_name):
             out.append(p)
-    
+
     return out
 ```
 
@@ -855,7 +856,7 @@ def _init_weights(model: eqx.Module, config: GPTConfig, key: jax.random.PRNGKey)
 
 I know! You might be wondering how a few lines of _PyTorch_ code turns into this. I assure you, this will sound simple once we breakdown the code into smaller blocks for explanation. We, however, remind the reader about the immutability of _JAX_ arrays before proceeding. Hence any update to the model cannot be done therein, but instead returned as a new _PyTree_.
 
-__`init_layer`__ This function is written as an abstraction to allow initializing any layer that is filtered through the `is_layer` callable. It will initialize the layers of the input model matching the filter with values sampled from a normal distribution defined by the specified mean and standard deviation. 
+**`init_layer`** This function is written as an abstraction to allow initializing any layer that is filtered through the `is_layer` callable. It will initialize the layers of the input model matching the filter with values sampled from a normal distribution defined by the specified mean and standard deviation.
 
 <!-- INFO Block -->
 <div 
@@ -882,11 +883,11 @@ __`init_layer`__ This function is written as an abstraction to allow initializin
     </p>
 </div>
 
-__`init_linear`__ Here, we simply call the `init_layer` with the filter to identify _Linear_ layers in the model, and the returned model is then additionally initialized with zeros for the biases of the _Linear_ layers.
+**`init_linear`** Here, we simply call the `init_layer` with the filter to identify _Linear_ layers in the model, and the returned model is then additionally initialized with zeros for the biases of the _Linear_ layers.
 
-__`init_embedding`__ Very similar to the `init_linear` function.
+**`init_embedding`** Very similar to the `init_linear` function.
 
-__`init_c_proj_weights_with_normal`__ Achieves the functionality as its name suggests. `c_proj.weights` are initialized with the custom normal distribution.
+**`init_c_proj_weights_with_normal`** Achieves the functionality as its name suggests. `c_proj.weights` are initialized with the custom normal distribution.
 
 We call these defined functions and return the new updated model. However, you may have noticed that even though we have defined this `_init_weights` method within the `GPT` module, it is not called in the constructor and hence will not do the necessary update to the model when an instance is created in the traditional sense. To achieve this, we create an additional static method that will be used to create a `GPT` instance with these updated weights.
 
@@ -965,7 +966,7 @@ The input into the model will be a batch (ℬ) of tokens (𝒯) representing the
 
 Hence the input would be a `jnp` array of shape,
 
-  ℬ × 𝒯
+ℬ × 𝒯
 
 Since we will be passing this input to the model in the training script, we will call using the `vmap` transformation on the 0<sup>th</sup> dimension.
 
@@ -1044,7 +1045,6 @@ def get_batch(split: str):
 
 This function serves to convert our model, a _PyTree_, to a specified datatype. Note that we are using the globally defined datatype and simply overriding the global model as well. We call this function after initializing model in any of the three starting states: scratch, resume, or from gpt-2.
 
-
 ```python
 def convert_model_to_dtype():
     global model
@@ -1054,10 +1054,10 @@ def convert_model_to_dtype():
                 return leaf.astype(dtype)
             else:
                 return leaf
-    
+
         return jax.tree_util.tree_map(_convert, pytree)
-    
-    
+
+
     if dtype == 'bfloat16':
         model = convert_pytree_to_dtype(model, jnp.bfloat16)
     elif dtype == 'float16':
@@ -1207,7 +1207,6 @@ def estimate_loss(model):
     return out
 ```
 
-
 ### The Train Loop
 
 We now show you the most minimal version of the training loop implemented in our code. After initializing the optimizer state, we make a step through every iteration. The loop is adapted to account for resuming stages as well. You may view the logging steps utilized in our project for an additional perspective.
@@ -1217,7 +1216,7 @@ optimizer_state = optimizer.init(eqx.filter(model, eqx.is_array))
 
 for local_iter_num in range(iter_num, max_iters):
     x, y = get_batch("train")
-    
+
     # do a training step
     model, optimizer_state, loss = make_step(model, optimizer_state, x, y)
 ```
@@ -1274,14 +1273,14 @@ For those inspired to dive deeper, the entire codebase for this project is open-
     </div>
 </div>
 
-
 ## Acknowledgements
-* We thank [Andrej Karpathy](https://karpathy.ai/) for his elegent repository of _nanoGPT_ which has helped us understand the _GPT_ architecture and contribute with a _JAX/Equinox_ version of their project.
-* We are also grateful for [Anh Tong](https://github.com/anh-tong) whose _Equinox_ version of _nanoGPT_ was a source of inspiration for our unique rewrite. We recommend referring to his version of nanoGPT as well here: [https://github.com/anh-tong/nanoGPT-equinox](https://github.com/anh-tong/nanoGPT-equinox).
-* The [JAX](https://jax.readthedocs.io/en/latest/index.html) team for an amazing framework.
-* The [Equinox](https://docs.kidger.site/equinox/) team for making JAX feel like PyTorch.
-* The [Modal](https://modal.com/) team for their effort in making serverless GPU usage accessible and affordable. Most importantly, for providing a free $30 credit for each workspace in your account.
-* This blogpost is powered by free icons from [Icons8](https://icons8.com).
-  * <a target="_blank" href="https://icons8.com/icon/VQOfeAx5KWTK/info">Info</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-  * <a target="_blank" href="https://icons8.com/icon/hP6pCUyT8QGk/error">Warning</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-  * <a target="_blank" href="https://icons8.com/icon/48250/code">Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+- We thank [Andrej Karpathy](https://karpathy.ai/) for his elegent repository of _nanoGPT_ which has helped us understand the _GPT_ architecture and contribute with a _JAX/Equinox_ version of their project.
+- We are also grateful for [Anh Tong](https://github.com/anh-tong) whose _Equinox_ version of _nanoGPT_ was a source of inspiration for our unique rewrite. We recommend referring to his version of nanoGPT as well here: [https://github.com/anh-tong/nanoGPT-equinox](https://github.com/anh-tong/nanoGPT-equinox).
+- The [JAX](https://jax.readthedocs.io/en/latest/index.html) team for an amazing framework.
+- The [Equinox](https://docs.kidger.site/equinox/) team for making JAX feel like PyTorch.
+- The [Modal](https://modal.com/) team for their effort in making serverless GPU usage accessible and affordable. Most importantly, for providing a free $30 credit for each workspace in your account.
+- This blogpost is powered by free icons from [Icons8](https://icons8.com).
+  - <a target="_blank" href="https://icons8.com/icon/VQOfeAx5KWTK/info">Info</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  - <a target="_blank" href="https://icons8.com/icon/hP6pCUyT8QGk/error">Warning</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  - <a target="_blank" href="https://icons8.com/icon/48250/code">Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
