@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Delivered an invited workshop on Implementing AI Agents for university undergraduates at AI-Driven Sri Lanka
+Delivered an invited workshop, [Implementing AI Agents](https://youtu.be/4oJvr5uVTTg?t=256), for university undergraduates at AI-Driven Sri Lanka

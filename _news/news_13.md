@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Published [nanoJAXGPT: A pedagogical introduction to JAX/Equinox](/blog/2024/nanoJAXGPT/) on the Hugging Face blog
+Published [nanoJAXGPT: A pedagogical introduction to JAX/Equinox](https://huggingface.co/blog/sachithgunasekara/nanojaxgpt) on the Hugging Face blog ([code](https://github.com/surgeglobal/nanoJAXGPT))
