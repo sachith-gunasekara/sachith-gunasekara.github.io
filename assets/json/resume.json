@@ -211,6 +211,22 @@
       "keywords": ["Python", "JAX/Equinox", "Hugging Face", "LangChain", "LangGraph", "AutoGen", "LlamaIndex", "Pinecone"]
     }
   ],
+  "talks": [
+    {
+      "title": "A Step Beyond the Hype: A Journey Through Modern AI",
+      "date": "2025-04",
+      "awarder": "IEEE Student Branch, Wayamba University of Sri Lanka",
+      "summary": "Invited talk (online)",
+      "url": "https://youtu.be/GbkTn_7Xyr8?t=419"
+    },
+    {
+      "title": "Implementing AI Agents",
+      "date": "2024-08",
+      "awarder": "AI-Driven Sri Lanka",
+      "summary": "Invited workshop for university undergraduates (online)",
+      "url": "https://youtu.be/4oJvr5uVTTg?t=256"
+    }
+  ],
   "meta": {
     "note": "Please refer to the attached PDF for a complete and up-to-date CV including publications, research, honors, talks, and other achievements."
   }
