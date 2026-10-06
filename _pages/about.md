@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning Engineer @ <a href="https://surge.global" target="_blank">Surge Global</a>
+subtitle: Senior AI Engineer @ <a href="https://gapstars.net" target="_blank">Gapstars</a> · Instructor @ <a href="https://stemlink.online" target="_blank">StemLink</a>
 
 profile:
   align: right
@@ -15,10 +15,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a Machine Learning Engineer at [Surge Global](https://surge.global) and a recent Computer Science graduate (First Class, ranked 1st) from the [University of Kelaniya](https://kln.ac.lk/). My journey in AI has been marked by a blend of academic excellence and hands-on industry experience, currently focusing on pushing the boundaries of what's possible with Large Language Models.
+I'm a Senior AI Engineer at [Gapstars](https://gapstars.net), placed at Envision AI Labs (Leiden, Netherlands), where I build evaluation frameworks and retrieval benchmarks for RAG and agentic systems on pharmaceutical and clinical data. Before that, I was a Senior AI Engineer at Arcadea Group and a Machine Learning Engineer at [Surge Global](https://surge.global). I graduated First Class, ranked 1st of 125, with a BSc (Hons) in Computer Science from the [University of Kelaniya](https://kln.ac.lk/).
 
-My research interests have culminated in the development of OpenBezoar, a family of efficient and performant small language models, and novel approaches to document classification. I'm particularly fascinated by the intersection of computational efficiency and cognitive science in AI, exploring how we can make language models both more resource-efficient and better at reasoning.
+My research focuses on LLM reasoning, instruction tuning and LLM evaluation. As first author of iSelf-Discover, I showed that unstructured reasoning plans outperform structured JSON plans across BBH, T4D and MATH. I also co-developed OpenBezoar, a low-cost recipe for training small, open instruction-following models, and earlier worked on positional N-gram profiles for document classification.
 
-When I'm not diving deep into AI research, I'm actively involved in the tech community, frequently sharing my insights through workshops and technical blogs. I'm currently seeking PhD opportunities in Computer Science, specifically focusing on enhancing LLM efficiency and reasoning capabilities. My goal is to contribute to the development of more resource-conscious and cognitively-aligned AI systems that can bridge the gap between System 1 and System 2 thinking.
-
-
+I teach an applied LLM curriculum as an instructor on StemLink's AI Engineering Bootcamp, and I share what I learn through talks, workshops and technical writing such as nanoJAXGPT. I'm interested in PhD opportunities in Computer Science focused on making LLMs reason better and more efficiently.
