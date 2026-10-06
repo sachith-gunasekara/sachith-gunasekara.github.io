@@ -1306,6 +1306,21 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 // News categories
+.news .news-category-label {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--global-text-color-light);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
 .news-category {
   display: inline-block;
   margin-right: 0.4rem;

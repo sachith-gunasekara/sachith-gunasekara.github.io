@@ -16,12 +16,14 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
+            <th scope="row" style="width: 20%">
+              {{ item.date | date: '%b %d, %Y' }}
               {% if item.category %}
                 {% assign category = site.data.news_categories | where: 'id', item.category | first %}
-                <a class="news-category" href="{{ '/news/' | relative_url }}#{{ item.category }}">{{ category.name }}</a>
+                <a class="news-category-label" href="{{ '/news/' | relative_url }}#{{ item.category }}">{{ category.name }}</a>
               {% endif %}
+            </th>
+            <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
