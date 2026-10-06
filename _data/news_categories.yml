@@ -1,0 +1,12 @@
+- id: research
+  name: Research
+- id: industry
+  name: Industry
+- id: teaching
+  name: Teaching & Talks
+- id: awards
+  name: Awards & Honours
+- id: education
+  name: Education
+- id: community
+  name: Community

@@ -1,0 +1,22 @@
+<div class="news">
+  <p class="news-category-nav">
+    {% for category in site.data.news_categories %}
+      <a class="news-category" href="#{{ category.id }}">{{ category.name }}</a>
+    {% endfor %}
+  </p>
+  {% assign news = site.news | reverse %}
+  {% for category in site.data.news_categories %}
+    {% assign items = news | where: 'category', category.id %}
+    {% if items.size > 0 %}
+      <h2 id="{{ category.id }}">{{ category.name }}</h2>
+      <table class="table table-sm table-borderless">
+        {% for item in items %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <td>{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+  {% endfor %}
+</div>
