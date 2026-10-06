@@ -3,6 +3,7 @@ layout: post
 date: 2023-02-02
 inline: true
 related_posts: false
+category: awards
 ---
 
 Received Dean's List award for Academic Year 2019/2020 at University of Kelaniya
